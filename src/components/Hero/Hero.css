@@ -1,0 +1,25 @@
+.hero-title {
+  font-family: "Merriweather", serif;
+}
+.about-me-card {
+  cursor: pointer;
+}
+
+.icon-wrapper {
+  /* background: #000; */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+
+  transition: 0.3s ease-in-out;
+}
+.icon-wrapper:hover {
+  background: #000;
+}
+
+.icon-wrapper:hover svg {
+  color: #fff;
+}
