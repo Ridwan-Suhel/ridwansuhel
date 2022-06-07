@@ -1,26 +1,49 @@
 import React from "react";
+import { useEffect, useRef } from "react";
+import gsap, { Power2, Power3 } from "gsap";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 const Header = () => {
+  let headerEl = useRef();
+  let header = useRef();
+
+  useEffect(() => {
+    headerEl.current = gsap.timeline();
+
+    headerEl.current.to(header.current, { duration: 0.3, y: 0 }).to(
+      ".navTxt",
+      {
+        duration: 0.5,
+        y: 0,
+        stagger: 0.1,
+        ease: "none",
+      },
+      "<"
+    );
+  }, []);
+
   const navlink = (
     <>
-      <li>
+      <li className="navTxt translate-y-[-1rem]">
         <Link to="/">HOME</Link>
       </li>
-      <li>
+      <li className="navTxt translate-y-[-1rem]">
         <Link to="/">ABOUT</Link>
       </li>
-      <li>
+      <li className="navTxt translate-y-[-1rem]">
         <Link to="/">CONTACT</Link>
       </li>
-      <li>
+      <li className="navTxt translate-y-[-1rem]">
         <Link to="/">PROJECTS</Link>
       </li>
     </>
   );
 
   return (
-    <header className="sticky bg-white/[.6] relative z-10 backdrop-blur-[20px] backdrop-saturate-[180%]">
+    <header
+      ref={header}
+      className="translate-y-[-1rem] sticky bg-white/[.6] relative z-10 backdrop-blur-[20px] backdrop-saturate-[180%]"
+    >
       <div className="container mx-auto">
         <div class="navbar bg-base-100 justify-between">
           <div class="navbar-start">

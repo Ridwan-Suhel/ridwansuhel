@@ -6,18 +6,13 @@
   font-family: "Merriweather", serif;
 }
 /* .heroTitle {
-  position: fixed;
-  top: 150px;
-  left: 10%;
-} */
-.heroTitle {
   transform: translateY(70px);
+} */
+.heroTitle .text {
+  transform: translateY(90px) rotate(-2deg);
 }
 .about-me-card {
   cursor: pointer;
-}
-.text {
-  transform: translateY(30px);
 }
 
 .icon-wrapper {
