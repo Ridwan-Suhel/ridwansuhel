@@ -1,3 +1,7 @@
+.hero-section {
+  visibility: hidden;
+  opacity: 0;
+}
 .hero-title {
   font-family: "Merriweather", serif;
 }
