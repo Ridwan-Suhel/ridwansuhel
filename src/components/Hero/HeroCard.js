@@ -28,6 +28,8 @@ const HeroCard = () => {
         duration: 0.5,
         ease: Power1.easeInOut,
         height: 355,
+        className:
+          "shadow bg-white mx-auto border rounded-lg about-me-card about-me-card-responsive",
       },
       0
     );

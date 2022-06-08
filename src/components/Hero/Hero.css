@@ -30,6 +30,9 @@
   .about-me-card {
     width: 100%;
   }
+  .about-me-card-responsive {
+    height: 296px !important;
+  }
   .short-info-bottomTxt {
     display: none;
   }
