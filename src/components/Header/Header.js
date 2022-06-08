@@ -39,13 +39,15 @@ const Header = () => {
     </>
   );
 
+  // border-b sticky top-0 bg-white/[.6] relative z-10 backdrop-blur-[20px] backdrop-saturate-[180%]
+
   return (
     <header
       ref={header}
-      className="translate-y-[-1rem] sticky bg-white/[.6] relative z-10 backdrop-blur-[20px] backdrop-saturate-[180%]"
+      className="border-b top-0 translate-y-[-1rem] sticky bg-white/[0.85] relative z-10 backdrop-blur-[12px] backdrop-saturate-[180%]"
     >
       <div className="container mx-auto">
-        <div class="navbar bg-base-100 justify-between">
+        <div class="navbar justify-between">
           <div class="navbar-start">
             <Link to="/" className="">
               <img
