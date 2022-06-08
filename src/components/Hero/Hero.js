@@ -14,9 +14,13 @@ const Hero = () => {
       css: { visibility: "visible", opacity: 1 },
     });
 
-    tl.current = gsap.timeline();
+    gsap.to(heroTitle.current, {
+      duration: 1,
+      "clip-path": "polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)",
+      opacity: 1,
+    });
 
-    // tl.current.to(heroTitle.current, { duration: 0.7, y: 0 });
+    tl.current = gsap.timeline();
 
     tl.current.to(".text", {
       duration: 0.6,
@@ -32,7 +36,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-0 hero-title">
         <div
           ref={heroTitle}
-          className="heroTitle text-3xl md:text-5xl text-center leading-tight mt-10"
+          className="heroTitleTxt text-3xl md:text-5xl text-center leading-tight mt-10"
         >
           <h1 className="text md:block">Ridwan Suhel</h1>
           <h1 className="text md:block">Frond-End Web Developer</h1>

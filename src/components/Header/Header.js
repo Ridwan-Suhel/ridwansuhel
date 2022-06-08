@@ -4,13 +4,13 @@ import gsap, { Power2, Power3 } from "gsap";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 const Header = () => {
-  let headerEl = useRef();
+  let headerTl = useRef();
   let header = useRef();
 
   useEffect(() => {
-    headerEl.current = gsap.timeline();
+    headerTl.current = gsap.timeline();
 
-    headerEl.current.to(header.current, { duration: 0.3, y: 0 }).to(
+    headerTl.current.to(header.current, { duration: 0.3, y: 0 }).to(
       ".navTxt",
       {
         duration: 0.5,
