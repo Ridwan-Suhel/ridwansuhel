@@ -31,10 +31,10 @@ const Header = () => {
         <Link to="/">ABOUT</Link>
       </li>
       <li className="navTxt translate-y-[-1rem]">
-        <Link to="/">CONTACT</Link>
+        <Link to="/">PROJECTS</Link>
       </li>
       <li className="navTxt translate-y-[-1rem]">
-        <Link to="/">PROJECTS</Link>
+        <Link to="/">CONTACT</Link>
       </li>
     </>
   );
