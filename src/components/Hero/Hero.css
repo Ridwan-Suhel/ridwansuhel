@@ -11,7 +11,7 @@
   opacity: 0;
 }
 .heroTitleTxt .text {
-  transform: translateY(100px) rotate(-2deg);
+  transform: translateY(120px) rotate(-2deg);
 }
 
 /* about me card style start */
@@ -24,6 +24,9 @@
   overflow: hidden;
 
   position: relative;
+
+  transform: translateY(120px);
+  opacity: 0;
 }
 
 @media (max-width: 767px) {

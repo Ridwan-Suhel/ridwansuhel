@@ -19,6 +19,13 @@ const HeroCard = () => {
   let toggle = menuClicked;
 
   useEffect(() => {
+    gsap.to(aboutCard.current, {
+      duration: 0.7,
+      delay: 0.6,
+      opacity: 1,
+      y: 0,
+    });
+
     cardTl.current = gsap.timeline({
       paused: true,
     });
