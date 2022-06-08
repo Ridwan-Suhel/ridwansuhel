@@ -38,7 +38,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-0 hero-title">
         <div
           ref={heroTitle}
-          className="heroTitleTxt text-2xl md:text-5xl text-center leading-tight mt-10"
+          className="heroTitleTxt text-2xl md:text-5xl text-left md:text-center leading-tight mt-10"
         >
           <h1 className="text md:block">Ridwan Suhel</h1>
           <h1 className="text md:block">Frond-End Web Developer</h1>
