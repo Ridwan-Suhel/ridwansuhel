@@ -21,3 +21,6 @@
   transform: translateY(calc(-100% + 220px));
   transition: transform 3s ease-in-out;
 }
+/* .projectDiv {
+  transform: translateY(120px);
+} */

@@ -3,24 +3,45 @@ import "./Projects.css";
 import project1 from "../../images/pr-1.png";
 import project2 from "../../images/pr-2.png";
 import project3 from "../../images/pr-3.png";
-import gsap from "gsap";
+import gsap, { Power3 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
+  let projectsTl = useRef();
   let prTitleTxt = useRef(null);
   let prTitleTxt2 = useRef(null);
+  let proj1 = useRef(null);
+  let proj2 = useRef(null);
+  let proj3 = useRef(null);
 
   useEffect(() => {
     const titleTrigger = [prTitleTxt.current, prTitleTxt2.current];
+    // const prTrigger = [proj1.current, proj2.current, proj3.current];
     gsap.fromTo(
       titleTrigger,
-      { y: 90, opacity: 0 },
+      { y: 10, opacity: 0 },
       {
         duration: 1,
         y: 0,
         opacity: 1,
         scrollTrigger: {
           trigger: titleTrigger,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".projectDiv",
+      { y: 90, opacity: 0 },
+      {
+        duration: 1,
+        y: 0,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".projectDiv",
+          start: "top 90%",
+          end: "bottom 60%",
+          toggleActions: "play none none reverse",
         },
       }
     );
@@ -45,10 +66,11 @@ const Projects = () => {
         <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2">
           {/* single-card  */}
           <a
+            ref={proj1}
             href="https://toolsplaza.web.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="col-span-1 flex"
+            className="col-span-1 flex projectDiv"
           >
             <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
               <figure className="card-top">
@@ -71,10 +93,11 @@ const Projects = () => {
           </a>
           {/* single-card  */}
           <a
+            ref={proj2}
             href="https://gadgetly-3045d.web.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="col-span-1 flex"
+            className="col-span-1 flex projectDiv"
           >
             <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
               <figure className="card-top">
@@ -97,10 +120,11 @@ const Projects = () => {
           </a>
           {/* single-card  */}
           <a
+            ref={proj3}
             href="https://ridwan-suhel.github.io/maEng/"
             target="_blank"
             rel="noopener noreferrer"
-            className="col-span-1 flex"
+            className="col-span-1 flex projectDiv"
           >
             <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
               <figure className="card-top">
