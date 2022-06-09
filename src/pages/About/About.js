@@ -5,6 +5,7 @@ import "./About.css";
 import { gsap, Power3 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Footer from "../../components/Footer/Footer";
+import Skills from "../../components/Skills/Skills";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
@@ -59,9 +60,14 @@ const About = () => {
       { y: 90, opacity: 0 },
       {
         duration: 0.6,
-        delay: 1.4,
+        delay: 0.1,
         y: 0,
         opacity: 1,
+        scrollTrigger: {
+          trigger: ".about-me-txt2",
+          start: "top 100%",
+          toggleActions: "play none none reverse",
+        },
       }
     );
     gsap.fromTo(
@@ -69,7 +75,7 @@ const About = () => {
       { y: 90, opacity: 0 },
       {
         duration: 0.6,
-        delay: 0.2,
+        delay: 0.4,
         y: 0,
         opacity: 1,
         scrollTrigger: {
@@ -113,7 +119,7 @@ const About = () => {
               />
             </div>
 
-            <div className="md:w-3/4 pb-10 mx-auto about-content-wrapper mt-10 flex justify-between items-center ">
+            <div className="py-16 md:w-3/4 pb-10 mx-auto about-content-wrapper mt-10 flex justify-between items-center ">
               <div className="intro-wrapper md:w-3/5 ">
                 <h2 className="about-me text-2xl mb-8 font-bold">About Me</h2>
                 <p className="text-xl about-me-txt1 mb-8">
@@ -190,6 +196,7 @@ const About = () => {
                 </ul>
               </div>
             </div>
+            <Skills />
           </div>
           {/* page container end */}
         </section>
