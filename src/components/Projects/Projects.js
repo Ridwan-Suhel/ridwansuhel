@@ -16,7 +16,9 @@ const Projects = () => {
 
   useEffect(() => {
     const titleTrigger = [prTitleTxt.current, prTitleTxt2.current];
-    // const prTrigger = [proj1.current, proj2.current, proj3.current];
+    const projectDiv1 = ".projectDiv1";
+    const projectDiv2 = ".projectDiv2";
+    const projectDiv3 = ".projectDiv3";
     gsap.fromTo(
       titleTrigger,
       { y: 10, opacity: 0 },
@@ -30,17 +32,33 @@ const Projects = () => {
       }
     );
 
+    // gsap.fromTo(
+    //   ".projectDiv",
+    //   { y: 90, opacity: 0 },
+    //   {
+    //     duration: 1,
+    //     y: 0,
+    //     opacity: 1,
+    //     scrollTrigger: {
+    //       trigger: ".projectDiv",
+    //       start: "top 90%",
+    //       end: "bottom 60%",
+    //       toggleActions: "play none none reverse",
+    //     },
+    //   }
+    // );
+
     gsap.fromTo(
-      ".projectDiv",
-      { y: 90, opacity: 0 },
+      [projectDiv1, projectDiv2, projectDiv3],
+      { y: 120 },
       {
-        duration: 1,
         y: 0,
-        opacity: 1,
+        duration: 1,
+
+        stagger: 0.2,
         scrollTrigger: {
-          trigger: ".projectDiv",
+          trigger: ".trigger-container",
           start: "top 90%",
-          end: "bottom 60%",
           toggleActions: "play none none reverse",
         },
       }
@@ -63,14 +81,14 @@ const Projects = () => {
             </h1>
           </div>
         </div>
-        <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2">
+        <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2 trigger-container">
           {/* single-card  */}
           <a
             ref={proj1}
             href="https://toolsplaza.web.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="col-span-1 flex projectDiv"
+            className="col-span-1 flex projectDiv1"
           >
             <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
               <figure className="card-top">
@@ -97,7 +115,7 @@ const Projects = () => {
             href="https://gadgetly-3045d.web.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="col-span-1 flex projectDiv"
+            className="col-span-1 flex projectDiv1"
           >
             <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
               <figure className="card-top">
@@ -124,7 +142,7 @@ const Projects = () => {
             href="https://ridwan-suhel.github.io/maEng/"
             target="_blank"
             rel="noopener noreferrer"
-            className="col-span-1 flex projectDiv"
+            className="col-span-1 flex projectDiv3"
           >
             <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
               <figure className="card-top">
