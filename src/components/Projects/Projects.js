@@ -32,28 +32,12 @@ const Projects = () => {
       }
     );
 
-    // gsap.fromTo(
-    //   ".projectDiv",
-    //   { y: 90, opacity: 0 },
-    //   {
-    //     duration: 1,
-    //     y: 0,
-    //     opacity: 1,
-    //     scrollTrigger: {
-    //       trigger: ".projectDiv",
-    //       start: "top 90%",
-    //       end: "bottom 60%",
-    //       toggleActions: "play none none reverse",
-    //     },
-    //   }
-    // );
-
     gsap.fromTo(
       [projectDiv1, projectDiv2, projectDiv3],
-      { y: 120 },
+      { y: 170 },
       {
         y: 0,
-        duration: 1,
+        duration: 0.7,
 
         stagger: 0.2,
         scrollTrigger: {
