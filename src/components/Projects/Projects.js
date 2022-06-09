@@ -108,8 +108,8 @@ const Projects = () => {
               <div className="card-body">
                 <h2 className="card-title">Gadgetly!</h2>
                 <p className="mb-2">
-                  Gadgetly is the wearhouse type simple website. This website
-                  made with <strong>Node js</strong>, express js,{" "}
+                  Gadgetly is the wearhouse type website. This website made with{" "}
+                  <strong>Node js</strong>, express js,{" "}
                   <strong>react js, react-router</strong>, Bootstrap, Firebase
                   Authentication.
                 </p>

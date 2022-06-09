@@ -77,7 +77,7 @@ const Skills = () => {
             Check my skills list that I love to work with.
           </p>
         </div>
-        <div className="skill-card-wrapper grid grid-cols-4 gap-3 mt-16">
+        <div className="skill-card-wrapper grid md:grid-cols-2 lg:grid-cols-4 gap-3 mt-16">
           <div className="skill-box shadow border rounded p-5 box1">
             <div>
               <h2 className="text-xl mb-5">Technical Skills</h2>

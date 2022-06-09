@@ -4,7 +4,8 @@ import airplane from "../../images/airplane.png";
 import { useForm } from "react-hook-form";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import gsap from "gsap";
+import gsap, { Circ } from "gsap";
+import { Icon } from "@iconify/react";
 import { GlobeAltIcon, MailIcon, PhoneIcon } from "@heroicons/react/outline";
 const Contact = () => {
   let conTitleTxt = useRef(null);
@@ -13,6 +14,11 @@ const Contact = () => {
   let sendMessageTxt = useRef(null);
   let contactInfoTxt = useRef(null);
   let paperPlane = useRef(null);
+
+  const social1 = ".social1";
+  const social2 = ".social2";
+  const social3 = ".social3";
+  const social4 = ".social4";
 
   useEffect(() => {
     const titleTrigger = [conTitleTxt.current, conTitleTxt2.current];
@@ -145,6 +151,24 @@ const Contact = () => {
         },
       }
     );
+
+    gsap.fromTo(
+      [social1, social2, social3, social4],
+      { x: -70, opacity: 0 },
+      {
+        x: 0,
+        stagger: 0.09,
+        ease: Circ.easeInOut,
+        delay: 0.1,
+        duration: 1,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".contact-social-ul",
+          start: "top 90%",
+          toggleActions: "restart none none reverse",
+        },
+      }
+    );
   }, []);
 
   const form = useRef();
@@ -268,6 +292,64 @@ const Contact = () => {
                   <span>Moulvibazar, Sylhet-Bangladesh.</span>
                 </li>
               </ul>
+
+              <div className="contact-social md:w-2/5">
+                <ul className="text-2xl text-right contact-social-ul flex mt-12 gap-4">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/ridwan-suhel"
+                    className="social1"
+                  >
+                    <li>
+                      <Icon
+                        className="w-8 h-8 ml-auto"
+                        icon="akar-icons:github-outline-fill"
+                      />
+                    </li>
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="linkedin.com/in/ridwan-suhel/"
+                    className="social2"
+                  >
+                    <li>
+                      <Icon
+                        className="w-8 h-8 ml-auto"
+                        icon="teenyicons:linkedin-outline"
+                      />
+                    </li>
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://twitter.com/RidwanSuhel"
+                    className="social3"
+                  >
+                    <li>
+                      <Icon
+                        className="w-8 h-8 ml-auto"
+                        icon="iconoir:twitter"
+                      />
+                    </li>
+                  </a>
+
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/RidwanSuhel/"
+                    className="social4"
+                  >
+                    <li>
+                      <Icon
+                        className="w-8 h-8 ml-auto"
+                        icon="icon-park-outline:facebook-one"
+                      />
+                    </li>
+                  </a>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

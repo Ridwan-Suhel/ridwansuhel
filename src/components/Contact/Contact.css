@@ -1,3 +1,10 @@
 .contact-section {
   font-family: "Merriweather", serif;
 }
+.contact-social-ul li svg {
+  transition: all 0.3s ease-in-out;
+}
+.contact-social-ul li svg:hover {
+  transform: scale(1.06);
+  color: #360eb9;
+}

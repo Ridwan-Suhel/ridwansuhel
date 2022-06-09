@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import ToastBox from "./components/ToastBox/ToastBox";
 import About from "./pages/About/About";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import Home from "./pages/Home/Home";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
+      <ToastBox />
     </div>
   );
 }
