@@ -1,8 +1,15 @@
 .about-section {
   font-family: "Merriweather", serif;
 }
+.img-wrapper {
+  transform: scale(2);
+  opacity: 0;
+}
 .social-ul {
   position: relative;
+}
+.social-ul a {
+  display: block;
 }
 .social-ul:before {
   content: "";
