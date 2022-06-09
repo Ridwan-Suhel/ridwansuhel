@@ -1,0 +1,37 @@
+.about-section {
+  font-family: "Merriweather", serif;
+}
+.social-ul {
+  position: relative;
+}
+.social-ul:before {
+  content: "";
+  width: 1px;
+  height: 96px;
+  background: #000;
+
+  position: absolute;
+  top: -120px;
+  right: 17px;
+}
+.social-ul:after {
+  content: "";
+  width: 1px;
+  height: 96px;
+  background: #000;
+
+  position: absolute;
+  bottom: -120px;
+  right: 17px;
+}
+.social-ul li {
+  margin-bottom: 20px;
+}
+.social-ul li svg {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.social-ul li svg:hover {
+  transform: scale(1.03);
+  color: #360eb9;
+}
