@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import ToastBox from "./components/ToastBox/ToastBox";
 import About from "./pages/About/About";
+import Blog from "./pages/Blog/Blog";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/project" element={<Project />}></Route>
         <Route path="/contact" element={<ContactPage />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <ToastBox />

@@ -36,6 +36,9 @@ const Header = () => {
       <li className="navTxt translate-y-[-1rem]">
         <NavLink to="/contact">CONTACT</NavLink>
       </li>
+      <li className="navTxt translate-y-[-1rem]">
+        <NavLink to="/blog">BLOG</NavLink>
+      </li>
     </>
   );
 
