@@ -124,7 +124,7 @@ const HeroCard = () => {
               I am experienced with converting any design file to HTML CSS with
               a fully responsive design.{" "}
             </p>
-            <Link className="text-indigo-600" to="/">
+            <Link className="text-indigo-600" to="/about">
               read more..
             </Link>
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useRef } from "react";
 import gsap, { Power2, Power3 } from "gsap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../images/logo.png";
 const Header = () => {
   let headerTl = useRef();
@@ -25,16 +25,16 @@ const Header = () => {
   const navlink = (
     <>
       <li className="navTxt translate-y-[-1rem]">
-        <Link to="/">HOME</Link>
+        <NavLink to="/home">HOME</NavLink>
       </li>
       <li className="navTxt translate-y-[-1rem]">
-        <Link to="/">ABOUT</Link>
+        <NavLink to="/about">ABOUT</NavLink>
       </li>
       <li className="navTxt translate-y-[-1rem]">
-        <Link to="/">PROJECTS</Link>
+        <NavLink to="/project">PROJECTS</NavLink>
       </li>
       <li className="navTxt translate-y-[-1rem]">
-        <Link to="/">CONTACT</Link>
+        <NavLink to="/contact">CONTACT</NavLink>
       </li>
     </>
   );

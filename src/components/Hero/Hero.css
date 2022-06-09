@@ -81,3 +81,13 @@
   color: #fff;
 }
 /* about me card style end */
+.hire-btn {
+  color: #fff;
+  padding: 5px 18px;
+  background: rgba(0, 128, 239, 0.65);
+  text-decoration: none;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
