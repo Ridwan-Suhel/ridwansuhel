@@ -62,7 +62,7 @@ const Skills = () => {
         scrollTrigger: {
           trigger: ".skill-card-wrapper",
           start: "top 90%",
-          toggleActions: "play none none reverse",
+          toggleActions: "restart none none reverse",
         },
       }
     );

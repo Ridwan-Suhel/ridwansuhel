@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Projects.css";
 import project1 from "../../images/pr-1.png";
 import project2 from "../../images/pr-2.png";
@@ -7,6 +7,8 @@ import gsap, { Power3 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
+  const [projectInfo, setProjectInfo] = useState([]);
+
   let projectsTl = useRef();
   let prTitleTxt = useRef(null);
   let prTitleTxt2 = useRef(null);
@@ -16,9 +18,7 @@ const Projects = () => {
 
   useEffect(() => {
     const titleTrigger = [prTitleTxt.current, prTitleTxt2.current];
-    const projectDiv1 = ".projectDiv1";
-    const projectDiv2 = ".projectDiv2";
-    const projectDiv3 = ".projectDiv3";
+
     gsap.fromTo(
       titleTrigger,
       { y: 10, opacity: 0 },
@@ -31,23 +31,43 @@ const Projects = () => {
         },
       }
     );
+  }, []);
 
+  useEffect(() => {
+    fetchData();
+    setTimeout(() => {
+      gsapAnim();
+    }, 1000);
+  }, []);
+
+  const fetchData = async () => {
+    await fetch("projects.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setProjectInfo(data);
+      });
+  };
+  const gsapAnim = () => {
+    const projectDiv1 = ".projectDiv1";
+    const projectDiv2 = ".projectDiv2";
+    const projectDiv3 = ".projectDiv3";
     gsap.fromTo(
       [projectDiv1, projectDiv2, projectDiv3],
-      { y: 170 },
+      { y: 170, opacity: 0 },
       {
         y: 0,
         duration: 0.7,
+        opacity: 1,
 
         stagger: 0.2,
         scrollTrigger: {
           trigger: ".trigger-container",
           start: "top 90%",
-          toggleActions: "play none none reverse",
+          toggleActions: "restart none none reverse",
         },
       }
     );
-  }, []);
+  };
 
   return (
     <section className="py-20 project-section">
@@ -67,85 +87,27 @@ const Projects = () => {
         </div>
         <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2 trigger-container">
           {/* single-card  */}
-          <a
-            ref={proj1}
-            href="https://toolsplaza.web.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-span-1 flex projectDiv1"
-          >
-            <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
-              <figure className="card-top">
-                <img src={project1} alt="Gadgetly" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">ToolsPlaza!</h2>
-                <p className="mb-2">
-                  ToolsPlaza is a tools manufacturer website. This website made
-                  with <strong>Node js</strong>, express js,{" "}
-                  <strong>react js, react-router</strong>, Bootstrap, Firebase
-                  Authentication.
-                </p>
-                <p>
-                  Admin role added &amp; user can add product, delete product,
-                  update product &amp; more
-                </p>
+
+          {projectInfo.map((project) => (
+            <a
+              ref={proj2}
+              href="https://gadgetly-3045d.web.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`col-span-1 flex ${project.projectDivClass}`}
+              key={project.id}
+            >
+              <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
+                <figure className="card-top">
+                  <img src={project.image} alt="Tutorplus" />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">{project.title}</h2>
+                  <p className="mb-2">{project.description}</p>
+                </div>
               </div>
-            </div>
-          </a>
-          {/* single-card  */}
-          <a
-            ref={proj2}
-            href="https://gadgetly-3045d.web.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-span-1 flex projectDiv1"
-          >
-            <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
-              <figure className="card-top">
-                <img src={project2} alt="Tutorplus" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Gadgetly!</h2>
-                <p className="mb-2">
-                  Gadgetly is the wearhouse type website. This website made with{" "}
-                  <strong>Node js</strong>, express js,{" "}
-                  <strong>react js, react-router</strong>, Bootstrap, Firebase
-                  Authentication.
-                </p>
-                <p>
-                  A user can add product, delete product, update product &amp;
-                  more
-                </p>
-              </div>
-            </div>
-          </a>
-          {/* single-card  */}
-          <a
-            ref={proj3}
-            href="https://ridwan-suhel.github.io/maEng/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-span-1 flex projectDiv3"
-          >
-            <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
-              <figure className="card-top">
-                <img src={project3} alt="Tutorplus" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">MaEng!</h2>
-                <p className="mb-2">
-                  MaEng is an Electro Mechanical Solution &amp; Service provider
-                  website. This website made with<strong>Bootstrap </strong>
-                  ,CSS, HTML, <strong>Responsive website</strong>, jQuery.
-                </p>
-                <p>
-                  This is multipage website &amp; fully responsive for all
-                  device.
-                </p>
-              </div>
-            </div>
-          </a>
+            </a>
+          ))}
         </div>
       </div>
     </section>

@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import ToastBox from "./components/ToastBox/ToastBox";
 import About from "./pages/About/About";
@@ -29,3 +28,4 @@ function App() {
 }
 
 export default App;
+//   https://i.ibb.co/5F0sgVb/pr-4.png

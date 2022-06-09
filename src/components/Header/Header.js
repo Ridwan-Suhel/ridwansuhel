@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useRef } from "react";
-import gsap, { Power2, Power3 } from "gsap";
+import gsap from "gsap";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../images/logo.png";
 const Header = () => {
