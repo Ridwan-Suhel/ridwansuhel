@@ -1,0 +1,25 @@
+.ProjectDetails-section {
+  font-family: "Merriweather", serif;
+}
+.proj-img-wrapper {
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+
+  perspective: 1000px;
+}
+.proj-img-wrapper img {
+  transition: transform 3s ease;
+  transform: rotateY(-15deg);
+  border: 2px solid #333;
+  border-radius: 6px;
+}
+@media (max-width: 600px) {
+  .proj-img-wrapper img {
+    transform: rotate(0);
+  }
+}
+.proj-img-wrapper:hover img {
+  transform: translateY(calc(-100% + 400px)) rotate(0);
+  transition: transform 3s ease;
+}

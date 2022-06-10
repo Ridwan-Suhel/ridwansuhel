@@ -71,7 +71,7 @@ const Skills = () => {
   return (
     <section className="py-20 skills-section ">
       <div className="container mx-auto px-4 md:px-0 ">
-        <div className="skills-title-wrapper text-center">
+        <div className="skills-title-wrapper lg:text-center">
           <h2 className="skills-title-txt1 text-2xl font-bold">Skills</h2>
           <p className="text-lg skills-title-txt2">
             Check my skills list that I love to work with.
