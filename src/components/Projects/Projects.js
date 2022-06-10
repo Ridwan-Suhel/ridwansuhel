@@ -52,7 +52,7 @@ const Projects = () => {
   }, []);
 
   const fetchData = async () => {
-    await fetch("http://localhost:5000/projects")
+    await fetch("https://nameless-mountain-09052.herokuapp.com/projects")
       .then((res) => res.json())
       .then((data) => {
         setProjectInfo(data);

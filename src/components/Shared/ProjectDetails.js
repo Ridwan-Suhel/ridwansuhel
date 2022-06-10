@@ -11,7 +11,7 @@ const ProjectDetails = () => {
 
   // const [projDetails, setProjDetails] = useState({});
 
-  const url = `http://localhost:5000/projects/${projectId}`;
+  const url = `https://nameless-mountain-09052.herokuapp.com/projects/${projectId}`;
 
   const { isLoading, data: projects } = useQuery("projects", () =>
     fetch(url).then((res) => res.json())
