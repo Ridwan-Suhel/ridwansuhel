@@ -7,6 +7,11 @@ import emailjs from "@emailjs/browser";
 import gsap, { Circ } from "gsap";
 import { Icon } from "@iconify/react";
 import { GlobeAltIcon, MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
+
 const Contact = () => {
   let conTitleTxt = useRef(null);
   let conTitleTxt2 = useRef(null);
@@ -196,6 +201,12 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    MySwal.fire({
+      title: "Message Sent",
+      text: "Thank You For Your Message. I will response you shortly.",
+      icon: "success",
+      confirmButtonText: "Ok",
+    });
     reset();
   };
   return (
