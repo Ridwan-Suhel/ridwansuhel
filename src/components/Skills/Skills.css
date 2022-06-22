@@ -1,3 +1,10 @@
 .skills-section {
   font-family: "Merriweather", serif;
 }
+.skill-box {
+  transition: all 0.3s ease-in-out;
+}
+.skill-box:hover {
+  cursor: pointer;
+  box-shadow: -10px 10px 0px #333;
+}

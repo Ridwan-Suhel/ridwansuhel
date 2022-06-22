@@ -25,9 +25,9 @@
     "projectDivClass": "projectDiv2",
     "image": "https://i.ibb.co/RC9WqC9/pr-2.png",
     "imagess": [
-      "https://i.ibb.co/269JHWk/gadgetly-1-min.jpg",
-      "https://i.ibb.co/QXxfjBv/gadgetly-2-min.jpg",
-      "https://i.ibb.co/zm43XMy/gadgetly-3-min.jpg"
+      "https://i.ibb.co/bFFXH0P/gadgetly-1.jpg",
+      "https://i.ibb.co/4RrPvQh/gadgetly-2.jpg",
+      "https://i.ibb.co/LJxVY2S/gadgetly-3.jpg"
     ],
     "title": "Gadgetly",
     "technology": [
@@ -46,9 +46,9 @@
     "projectDivClass": "projectDiv3",
     "image": "https://i.ibb.co/7XxNYYp/pr-3.png",
     "imagess": [
-      "https://i.ibb.co/z2xfC68/ma-eng-1-min.jpg",
-      "https://i.ibb.co/CpGL6q8/ma-eng-2-min.jpg",
-      "https://i.ibb.co/3MkRCY4/maeng-3-min.jpg"
+      "https://i.ibb.co/s5vNCdT/maeng-1.jpg",
+      "https://i.ibb.co/b3xVhcL/maeng-2.jpg",
+      "https://i.ibb.co/pRQ1NQZ/maeng-3.jpg"
     ],
     "title": "MaEng",
     "technology": ["HTML", "SCSS", "Bootstrap Css", "jQuery"],
