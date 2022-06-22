@@ -1,11 +1,11 @@
 [
   {
     "projectDivClass": "projectDiv1",
-    "image": "https://i.ibb.co/sHSJ70K/pr-1.png",
+    "image": "https://i.ibb.co/K07fnDw/pr-1.png",
     "imagess": [
-      "https://i.ibb.co/hFVjH8F/toolsplaza-1-min.jpg",
-      "https://i.ibb.co/0KWb6vq/toolsplaza-2-min.jpg",
-      "https://i.ibb.co/CW7rDpV/toolsplaza-3-min.jpg"
+      "https://i.ibb.co/tDzJXPT/toolsplaza-1.jpg",
+      "https://i.ibb.co/RYt14sJ/toolsplaza-2.jpg",
+      "https://i.ibb.co/yVZrkwY/toolsplaza-3.jpg"
     ],
 
     "title": "ToolsPlaza",
@@ -23,7 +23,7 @@
   },
   {
     "projectDivClass": "projectDiv2",
-    "image": "https://i.ibb.co/MPM2VYP/pr-2.png",
+    "image": "https://i.ibb.co/RC9WqC9/pr-2.png",
     "imagess": [
       "https://i.ibb.co/269JHWk/gadgetly-1-min.jpg",
       "https://i.ibb.co/QXxfjBv/gadgetly-2-min.jpg",
@@ -44,7 +44,7 @@
   },
   {
     "projectDivClass": "projectDiv3",
-    "image": "https://i.ibb.co/cYLvdP9/pr-3.png",
+    "image": "https://i.ibb.co/7XxNYYp/pr-3.png",
     "imagess": [
       "https://i.ibb.co/z2xfC68/ma-eng-1-min.jpg",
       "https://i.ibb.co/CpGL6q8/ma-eng-2-min.jpg",

@@ -98,7 +98,7 @@ const ProjectDetails = () => {
 
   return (
     <section className="ProjectDetails-section mt-10 ">
-      <div className="container mx-auto p-5 md:p-10 bg-[#E6F4FF] rounded-lg">
+      <div className="container mx-auto p-5 md:p-10 bg-[#0097e629] rounded-lg">
         <div className="details-wrapper md:flex justify-between">
           <div className="project-detail-part md:w-3/6  w-full">
             <h2 className="text-xl mb-4 projTitle">
@@ -167,11 +167,11 @@ const ProjectDetails = () => {
         <div className="proj-screenshot-wrapper">
           <h2 className="text-xl mb-4">Project Screenshots</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ss-container">
-            {projects?.imagess?.map((img) => (
+            {projects.imagess.map((img) => (
               <div
                 className={`border shadow p-5  ${projects?.projectDivClass}`}
               >
-                <img src={img} alt="imageSS" />
+                <img src={img} alt="imageSS" className="border" />
               </div>
             ))}
           </div>
