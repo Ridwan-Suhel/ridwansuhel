@@ -6,9 +6,11 @@ import project3 from "../../images/pr-3.png";
 import gsap, { Power3 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useNavigate } from "react-router-dom";
+import Loading from "../Shared/Loading/Loading";
 gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   const [projectInfo, setProjectInfo] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
   let projectSection = useRef(null);
 
   let projectsTl = useRef();
@@ -56,6 +58,7 @@ const Projects = () => {
       .then((res) => res.json())
       .then((data) => {
         setProjectInfo(data);
+        setIsLoading(true);
       });
   };
   const gsapAnim = () => {
@@ -105,32 +108,39 @@ const Projects = () => {
         </div>
         <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2 trigger-container">
           {/* single-card  */}
-
-          {projectInfo.map((project) => (
-            <div
-              onClick={() => navigateToProjectDetails(project._id)}
-              className={`singleCard col-span-1 relative overflow-hidden flex ${project.projectDivClass}`}
-              key={project._id}
-            >
-              <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
-                <figure className="card-top">
-                  <img src={project.image} alt="Tutorplus" />
-                </figure>
-                <div className="p-5">
-                  <h2 className="card-title">{project.title}</h2>
-                  <p className="mb-8">
-                    {project.description.slice(0, 67).concat("...Read More")}
-                  </p>
-                </div>
-              </div>
-              <button
+          {isLoading ? (
+            projectInfo.map((project) => (
+              <div
                 onClick={() => navigateToProjectDetails(project._id)}
-                className="see-details-btn absolute"
+                className={`singleCard col-span-1 relative overflow-hidden flex ${project.projectDivClass}`}
+                key={project._id}
               >
-                See Details
-              </button>
+                <div className="rounded single-card w-full bg-base-100 shadow border border-primary">
+                  <figure className="card-top">
+                    <img src={project.image} alt="Tutorplus" />
+                  </figure>
+                  <div className="p-5">
+                    <h2 className="card-title">{project.title}</h2>
+                    <p className="mb-8">
+                      {project.description.slice(0, 67).concat("...Read More")}
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => navigateToProjectDetails(project._id)}
+                  className="see-details-btn absolute"
+                >
+                  See Details
+                </button>
+              </div>
+            ))
+          ) : (
+            <div className="col-span-3">
+              <Loading />
             </div>
-          ))}
+          )}
+
+          {}
         </div>
       </div>
     </section>
