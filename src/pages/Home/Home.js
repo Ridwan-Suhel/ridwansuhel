@@ -8,7 +8,7 @@ import Skills from "../../components/Skills/Skills";
 const Home = () => {
   return (
     <>
-      <main>
+      <main className="">
         <Hero />
         <Projects />
         <Skills />
