@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer/Footer";
 import Projects from "../../components/Projects/Projects";
 import MoreProject from "./MoreProject/MoreProject";
 
@@ -11,6 +12,7 @@ const Project = () => {
         </div>
       </div>
       <MoreProject />
+      <Footer />
     </main>
   );
 };

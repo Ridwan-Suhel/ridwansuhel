@@ -3,7 +3,9 @@ import { Icon } from "@iconify/react";
 
 const MoreProjectCard = ({ data }) => {
   return (
-    <div className="transition-all cursor-pointer more-card-box border border-slate-300 shadow rounded-sm p-4 relative overflow-hidden">
+    <div
+      className={`${data.projectDivClass} transition-all cursor-pointer more-card-box border border-slate-300 shadow rounded-sm p-4 relative overflow-hidden`}
+    >
       <div>
         <img src={data?.image} alt={data?.title} />
       </div>

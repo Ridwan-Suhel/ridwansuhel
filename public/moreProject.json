@@ -1,6 +1,6 @@
 [
   {
-    "projectDivClass": "mProjectDiv",
+    "projectDivClass": "mProjectDiv1",
     "image": "https://i.ibb.co/L1FSB7j/blaze.jpg",
     "title": "BlazeWeather",
     "technology": ["React JS", "Tailwind CSS", "openweathermap api"],
@@ -10,7 +10,7 @@
     "features": "Location base weather info, Change weather unit point, Dark or Light mode, Hourly and daily data, Accurate timezone for other places & more"
   },
   {
-    "projectDivClass": "mProjectDiv",
+    "projectDivClass": "mProjectDiv2",
     "image": "https://i.ibb.co/M6vTd99/tutor.jpg",
     "title": "TutorPlus",
     "technology": ["React JS", "Bootstrap", "Firebase Authentication"],
@@ -20,7 +20,7 @@
     "description": "TutorPlus is a react base web app of a Independent-service-provider."
   },
   {
-    "projectDivClass": "mProjectDiv",
+    "projectDivClass": "mProjectDiv3",
     "image": " https://i.ibb.co/5RN4yrS/analyticzen.jpg",
     "title": "Analyticzen",
     "technology": ["React", "Tailwind Css", "React chart"],
@@ -30,7 +30,7 @@
     "description": "Sturtupr is a react web app."
   },
   {
-    "projectDivClass": "mProjectDiv",
+    "projectDivClass": "mProjectDiv4",
     "image": "https://i.ibb.co/HtfGzRs/sturtupr.jpg",
     "title": "Sturtupr",
     "technology": ["HTML", "CSS", "Bootstrap", "Javascript/jQuery"],
@@ -40,7 +40,7 @@
     "description": "Sturtupr is a single page HTML website."
   },
   {
-    "projectDivClass": "mProjectDiv",
+    "projectDivClass": "mProjectDiv5",
     "image": "https://i.ibb.co/J7K6GLj/appri.jpg",
     "title": "Appri",
     "technology": ["HTML", "CSS", "Bootstrap", "Javascript/jQuery"],
