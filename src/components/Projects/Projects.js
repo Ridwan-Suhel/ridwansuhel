@@ -102,7 +102,7 @@ const Projects = () => {
               Projects
             </p>
             <h1 ref={prTitleTxt2} className="text-xl text-left md:text-center ">
-              My Recent works That I love to Show.
+              My recent works that I love to show.
             </h1>
           </div>
         </div>

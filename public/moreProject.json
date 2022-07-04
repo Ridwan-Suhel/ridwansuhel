@@ -1,0 +1,47 @@
+[
+  {
+    "projectDivClass": "mProjectDiv",
+    "image": "https://i.ibb.co/L1FSB7j/blaze.jpg",
+    "title": "BlazeWeather",
+    "technology": ["React JS", "Tailwind CSS", "openweathermap api"],
+    "liveLink": "https://blazeweather.netlify.app/",
+    "clientLink": "https://github.com/Ridwan-Suhel/blaze-weather",
+    "description": "BlazeWeather is a weather react web app. Features & Functionality: Location base weather info, Change weather unit point, Dark or Light mode, Hourly and daily data, Accurate timezone for other places & more"
+  },
+  {
+    "projectDivClass": "mProjectDiv",
+    "image": "https://i.ibb.co/M6vTd99/tutor.jpg",
+    "title": "TutorPlus",
+    "technology": ["React JS", "Bootstrap", "Firebase Authentication"],
+    "liveLink": "https://tutorplus-5456d.web.app/",
+    "clientLink": "https://github.com/Ridwan-Suhel/tutorplus",
+    "description": "TutorPlus is a react base web app of a Independent-service-provider. Features & Functionality: Website has a protected page, verified email system, Reset password if forgot, Firebase authentication & more"
+  },
+  {
+    "projectDivClass": "mProjectDiv",
+    "image": " https://i.ibb.co/5RN4yrS/analyticzen.jpg",
+    "title": "Analyticzen",
+    "technology": ["React", "Tailwind Css", "React chart"],
+    "liveLink": "https://analyticszen.netlify.app",
+    "clientLink": "https://github.com/Ridwan-Suhel/analyticszen",
+    "description": "Sturtupr is a react web app. Features & Functionality: Fully responsive, Used recharts react library for dashboard chart & more"
+  },
+  {
+    "projectDivClass": "mProjectDiv",
+    "image": "https://i.ibb.co/HtfGzRs/sturtupr.jpg",
+    "title": "Sturtupr",
+    "technology": ["HTML", "CSS", "Bootstrap", "Javascript/jQuery"],
+    "liveLink": "https://ridwan-suhel.github.io/sturtupr/",
+    "clientLink": "https://github.com/Ridwan-Suhel/sturtupr",
+    "description": "Sturtupr is a single page HTML website. Features & Functionality: Fully responsive, Beautiful Ui experience for user, jQ animation & more"
+  },
+  {
+    "projectDivClass": "mProjectDiv",
+    "image": "https://i.ibb.co/J7K6GLj/appri.jpg",
+    "title": "Appri",
+    "technology": ["HTML", "CSS", "Bootstrap", "Javascript/jQuery"],
+    "liveLink": "https://ridwan-suhel.github.io/appri/",
+    "clientLink": "https://github.com/Ridwan-Suhel/appri",
+    "description": "Appri is a single page modern HTML website. Features & Functionality: Fully responsive, Beautiful Ui experience for user, jQ animation & more"
+  }
+]

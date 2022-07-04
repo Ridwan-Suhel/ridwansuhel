@@ -1,14 +1,16 @@
 import React from "react";
 import Projects from "../../components/Projects/Projects";
+import MoreProject from "./MoreProject/MoreProject";
 
 const Project = () => {
   return (
     <main>
-      <section className="py-5 project-section">
+      <div className="project-section">
         <div className="">
           <Projects />
         </div>
-      </section>
+      </div>
+      <MoreProject />
     </main>
   );
 };
