@@ -124,15 +124,18 @@ const About = () => {
                 <h2 className="about-me text-2xl mb-8 font-bold">About Me</h2>
                 <p className="text-xl about-me-txt1 mb-8">
                   Hello there, I'm <strong> Ridwan Hussen Suhel</strong> . I am
-                  a Web Developer, with a good knowledge of HTML/CSS, React JS,
-                  Node JS, and Expertise with Bootstrap, Tailwind CSS,
-                  Javascript, and Sass/Scss.
+                  a Front-End Developer, with a good knowledge of HTML/CSS,
+                  React JS, Node JS, Javascript, Firebase, Heroku for
+                  deployment, and also Expertise with Bootstrap, Tailwind CSS,
+                  and Sass/Scss.
                 </p>
                 <p className="text-xl about-me-txt2">
-                  I am experienced with converting any design file to HTML CSS
-                  with a fully <strong>responsive design</strong>. As a junior
-                  web developer, I have developed web-based applications from
-                  design to code and implemented backend technologies like Node
+                  I am experienced with designing and developing complex
+                  frontend flows and components and converting any design file
+                  to HTML CSS with a fully <strong>responsive design</strong>.
+                  As a junior web developer, I have developed web-based
+                  applications from design to code and{" "}
+                  <strong>implemented backend technologies</strong> like Node
                   js, Express js, MongoDB, and so on for my projects. I love and
                   enjoy what I do and always looking for an opportunity to do
                   better and achieve greatness.

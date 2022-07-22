@@ -1,6 +1,23 @@
 [
   {
     "projectDivClass": "mProjectDiv1",
+    "image": "https://i.ibb.co/1ZQf25x/Rectangle-9.jpg",
+    "title": "Noze",
+    "technology": [
+      "React JS",
+      "Tailwind CSS",
+      "Swiper js",
+      "React Icons",
+      "Gsap",
+      "Firebase Hosting"
+    ],
+    "liveLink": "https://noze-replica.web.app/",
+    "clientLink": "https://github.com/Ridwan-Suhel/noze-clone",
+    "description": "Noze web app is a clone of getnoze website.",
+    "features": "Responsive for desktop and mobile devices, added animation, people can get beautiful user experience."
+  },
+  {
+    "projectDivClass": "mProjectDiv1",
     "image": "https://i.ibb.co/L1FSB7j/blaze.jpg",
     "title": "BlazeWeather",
     "technology": ["React JS", "Tailwind CSS", "openweathermap api"],

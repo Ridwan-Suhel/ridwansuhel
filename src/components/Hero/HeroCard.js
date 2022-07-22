@@ -119,11 +119,17 @@ const HeroCard = () => {
 
             <p className="mt-4 short-info-bottomTxt">
               {" "}
+              I am experienced with designing and developing complex frontend
+              flows and components and converting any design file to HTML CSS
+              with a fully responsive design.{" "}
+            </p>
+            {/* <p className="mt-4 short-info-bottomTxt">
+              {" "}
               I have a good knowledge of HTML/CSS, React JS, Node JS, and
               Expertise with Bootstrap, Tailwind CSS, Javascript, and Sass/Scss.
               I am experienced with converting any design file to HTML CSS with
               a fully responsive design.{" "}
-            </p>
+            </p> */}
             <Link className="text-indigo-600" to="/about">
               read more..
             </Link>

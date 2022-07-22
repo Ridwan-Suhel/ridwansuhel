@@ -5,6 +5,8 @@ import Loading from "./Loading/Loading";
 import "./ProjectDetails.css";
 import { Icon } from "@iconify/react";
 import gsap, { Power3 } from "gsap";
+import MoreProject from "../../pages/Project/MoreProject/MoreProject";
+import MoreProjectCard from "../../pages/Project/MoreProject/MoreProjectCard";
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
@@ -98,7 +100,7 @@ const ProjectDetails = () => {
 
   return (
     <section className="ProjectDetails-section mt-10 ">
-      <div className="container mx-auto p-5 md:p-10 bg-[#0097e629] rounded-lg">
+      <div className="container mx-auto p-5 md:p-10 lg:py-24 bg-slate-200 rounded-lg">
         <div className="details-wrapper md:flex justify-between">
           <div className="project-detail-part md:w-3/6  w-full">
             <h2 className="text-xl mb-4 projTitle">
